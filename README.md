@@ -26,8 +26,8 @@ pip install langchain-community langchain-huggingface langchain_ollama
 pip install youtube-transcript-api
 pip install pytube --upgrade
 
-#Configuration
-##Hugging Face Hub
+# Configuration
+## Hugging Face Hub
 To use Hugging Face Hub models, configure the access token:
 
 import os
@@ -35,15 +35,15 @@ import getpass
 
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = getpass.getpass()
 
-##Ollama phi3
+## Ollama phi3
 To use the phi3 model from Ollama:
 
-##Download Ollama from: https://ollama.com/download
+## Download Ollama from: https://ollama.com/download
 In the terminal, run:
 ollama pull phi3
 
-#How to Use
-##Method 1 - Learning
+# How to Use
+## Method 1 - Learning
 This method is educational and explores the following steps:
 
 Extracts video information, including metadata and transcript.
@@ -57,7 +57,7 @@ Loading videos and extracting information more efficiently.
 Setting up the LLM and prompt chain.
 Querying the transcript.
 
-#Usage Example:
+# Usage Example:
 url_video = "https://www.youtube.com/watch?v=PeMlggyqz0Y&t=6s"
 query_user = "summarize in an easy-to-understand way"
 model_class = "ollama" # Options: ["hf_hub", "ollama"]
